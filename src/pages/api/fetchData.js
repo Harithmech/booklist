@@ -8,6 +8,8 @@ export default async function handler(req, res) {
 				.select('id, category_name, emoji');
 			if (categoriesError) throw categoriesError;
 
+			console.log('categories');
+			
 			const { data: items, error: itemsError } = await supabase
 				.from('items')
 				.select('name, url, relation');

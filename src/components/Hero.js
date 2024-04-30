@@ -1,12 +1,13 @@
 import { FacebookShare,TwitterShare,WhatsappShare,TelegramShare,EmailShare } from 'react-share-kit/dist/index.es'
 
 const Hero = () => {
-  const shareUrl = 'https://pondy.life';
-  const shareTitle = 'the exhaustive list of food,stay & things to do in pondi';
+  const shareUrl = 'https://pagesonfire.com/';
+  const shareTitle = 'the directory of books!';
   return (
-    <div className="relative bg-cover bg-center text-center py-16 lg:py-32" style={{ backgroundImage: "url('/hero.png')" }}>
-      <h1 className="text-2xl sm:text-4xl lg:text-4xl font-bold text-white">The most trusted list of recos for pondy</h1>
-      <p className="mt-2 text-base sm:text-lg lg:text-2xl text-white">Stop getting lost on Google.</p>
+    <div className="relative bg-gray-100 text-center py-16 lg:py-32">
+
+      <h1 className="text-2xl sm:text-4xl lg:text-4xl font-bold text-gray-900">Discover Your Next Adventure: Explore Our Book Collection!</h1>
+      <p className="mt-2 text-base sm:text-lg lg:text-2xl text-gray-900">Stop getting lost...</p>
       <div className='py-2'>
       <WhatsappShare
   url={shareUrl}

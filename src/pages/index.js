@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import ContentGrid from '../components/ContentGrid';
 import Footer from '../components/Footer';
 
+
 export default function Home() {
 	const [combinedData, setCombinedData] = useState([]);
 
@@ -11,7 +12,9 @@ export default function Home() {
 		async function loadData() {
 			try {
 				const response = await fetch('/api/fetchData');
+				console.log(response);
 				const data = await response.json();
+				console.log(data);
 				if (!response.ok) throw new Error(data.error || 'Failed to fetch');
 				setCombinedData(data);
 			} catch (error) {
@@ -39,4 +42,4 @@ export default function Home() {
 			<Footer />
 		</div>
 	);
-}
+} 
