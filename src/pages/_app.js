@@ -1,7 +1,7 @@
 import '@/styles/globals.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
-// import { trackEvent } from '../lib/mixpanelClient';
+import { trackEvent } from '../lib/mixpanelClient';
 
 export default function MyApp({ Component, pageProps }) {
 	const router = useRouter();
@@ -9,11 +9,11 @@ export default function MyApp({ Component, pageProps }) {
 	useEffect(() => {
 		const handleRouteChange = (url) => {
 			// Track page view event
-			// trackEvent('Page Viewed', { page: url });
+			trackEvent('Page Viewed', { page: url });
 		};
 
 		// Track the initial page load
-		// trackEvent('Page Viewed', { page: router.pathname });
+		trackEvent('Page Viewed', { page: router.pathname });
 
 		// Subscribe to route changes to track page views
 		router.events.on('routeChangeComplete', handleRouteChange);
