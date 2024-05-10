@@ -13,7 +13,7 @@ const Hero = () => {
         <span className="text-green-500">Connect</span>
       </h1>
 
-      <p className="mt-2 text-base sm:text-lg lg:text-2xl text-gray-900">"Explore the best in every genre with our curated top 10 book lists, each promising to captivate and inspire."</p>
+      <p className="mt-2 text-base sm:text-lg lg:text-2xl text-gray-900">Explore the best in every genre with our curated top 10 book lists, each promising to captivate and inspire.</p>
       
 
     </div>
