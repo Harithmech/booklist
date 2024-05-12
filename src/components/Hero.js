@@ -1,7 +1,7 @@
 import { FacebookShare,TwitterShare,WhatsappShare,TelegramShare,EmailShare } from 'react-share-kit/dist/index.es'
 
 const Hero = () => {
-  const shareUrl = 'https://pagesonfire.com/';
+  const shareUrl = 'https://www.pagesandpioneer.com/';
   const shareTitle = 'the directory of books!';
   return (
     <div className="relative bg-gray-100 text-center py-16 lg:py-32">
