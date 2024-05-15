@@ -16,21 +16,21 @@ export default function ContentGrid({ title, emoji, items = [] }) {
       </h2>
       <ul className="pl-4 counter-reset pb-2">
         {items.map((item, index) => (
-          <li key={index} className="mb-1 counter-increment group p-0.5">
+          <li key={index} className="mb-1 counter-increment group p-0.5 ">
             <a 
               href={item.url} 
               // onClick={() => trackEvent('Link Clicked', { name: item.name, url: item.url })}
 
-              className="flex items-center no-underline text-sm" 
+              className="flex items-center no-underline text-sm hover:text-blue-500" 
               target="_blank" 
               rel="noopener noreferrer"
             >
               {/* Counter */}
               <span className="counter text-slate-300 mr-2"></span>
               {/* Text with conditional underline on hover */}
-              <span className="text-slate-500 underline underline-offset-4">{item.name}</span>
+              <span className="text-slate-500 underline underline-offset-4 hover:text-red-500">{item.name}</span>
               {/* Separate span for the arrow to prevent it from being underlined */}
-              <span className="ml-2 text-slate-500 transform rotate-[-45deg] inline-block group-hover:no-underline">→</span>
+              <span className="ml-2 text-slate-500 transform rotate-[-45deg] inline-block group-hover:no-underline hover:text-red-500">→</span>
             </a>
             {/* Full-width underline for each list item */}
           </li>
